@@ -8,7 +8,7 @@
 
 import UIKit
 
-class page4 : UIViewController
+class Page4 : UIViewController
 {
     
 }
