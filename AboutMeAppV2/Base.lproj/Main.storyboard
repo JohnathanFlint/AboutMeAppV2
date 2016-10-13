@@ -10,67 +10,85 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMeAppV2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="S6X-qy-C9n"/>
+                        <viewControllerLayoutGuide type="bottom" id="BaU-WB-BhH"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="qOq-R6-EVz">
                                 <rect key="frame" x="281" y="563" width="39" height="37"/>
                             </pageControl>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qaU-2C-Djj">
-                                <rect key="frame" x="196" y="28" width="208" height="30"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vYG-Vf-moL">
+                                <rect key="frame" x="0.0" y="20" width="51" height="31"/>
+                                <connections>
+                                    <action selector="menuSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="xrv-vK-NVh"/>
+                                </connections>
+                            </switch>
+                            <stackView opaque="NO" contentMode="top" fixedFrame="YES" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qaU-2C-Djj">
+                                <rect key="frame" x="112" y="20" width="208" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7P8-65-NVI">
                                         <rect key="frame" x="0.0" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Page 2 "/>
                                         <connections>
-                                            <segue destination="Bnz-fK-xVu" kind="show" id="h5a-f2-cTV"/>
+                                            <segue destination="Bnz-fK-xVu" kind="presentation" id="h5a-f2-cTV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fL3-yn-6ks">
                                         <rect key="frame" x="52" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Page 3 "/>
                                         <connections>
-                                            <segue destination="nM9-13-nJr" kind="show" id="mH8-Bh-KGW"/>
+                                            <segue destination="nM9-13-nJr" kind="presentation" id="mH8-Bh-KGW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6H5-LD-atd">
                                         <rect key="frame" x="104" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Page 4 "/>
                                         <connections>
-                                            <segue destination="IhX-Pz-RhX" kind="show" id="qJT-gL-CEo"/>
+                                            <segue destination="IhX-Pz-RhX" kind="presentation" id="qJT-gL-CEo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAP-fj-5Jl">
                                         <rect key="frame" x="156" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Page 5 "/>
                                         <connections>
-                                            <segue destination="rlX-3A-xFb" kind="show" id="nfF-rV-h4Z"/>
+                                            <segue destination="rlX-3A-xFb" kind="presentation" id="nfF-rV-h4Z"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vYG-Vf-moL">
-                                <rect key="frame" x="0.0" y="20" width="51" height="31"/>
-                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boy-pY-6Lr">
+                                <rect key="frame" x="356" y="20" width="30" height="30"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="exitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t11-gK-DIG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="exitButton" destination="boy-pY-6Lr" id="WUe-yo-Uyw"/>
+                        <outlet property="menuSwitch" destination="vYG-Vf-moL" id="HwE-dl-K0d"/>
+                        <outlet property="page2Button" destination="7P8-65-NVI" id="fyZ-2O-p84"/>
+                        <outlet property="page3Button" destination="fL3-yn-6ks" id="iat-Jc-lcG"/>
+                        <outlet property="page4Button" destination="6H5-LD-atd" id="LUE-NM-bSj"/>
+                        <outlet property="page5Button" destination="OAP-fj-5Jl" id="dHd-Iu-u3d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-251" y="-283"/>
+            <point key="canvasLocation" x="-269" y="-271"/>
         </scene>
         <!--Page4-->
         <scene sceneID="nz0-8z-VNJ">
             <objects>
                 <viewController id="IhX-Pz-RhX" customClass="Page4" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oEo-wN-KTe"/>
-                        <viewControllerLayoutGuide type="bottom" id="ksl-LD-hR5"/>
+                        <viewControllerLayoutGuide type="top" id="9e8-df-HQk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jt6-FP-ary"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="V5s-zo-DLA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -79,45 +97,64 @@
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="qTk-Bb-t7u">
                                 <rect key="frame" x="281" y="563" width="39" height="37"/>
                             </pageControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xcq-qw-I24">
+                                <rect key="frame" x="0.0" y="19" width="51" height="31"/>
+                                <connections>
+                                    <action selector="menuSwitch:" destination="IhX-Pz-RhX" eventType="valueChanged" id="gbJ-MF-bEm"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfB-Bx-1KC">
+                                <rect key="frame" x="358" y="20" width="30" height="30"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="ExitButton:" destination="IhX-Pz-RhX" eventType="touchUpInside" id="z2X-RM-qPW"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7nG-2t-BzM">
-                                <rect key="frame" x="197" y="20" width="206" height="30"/>
+                                <rect key="frame" x="114" y="20" width="206" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L04-d7-2Bk">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
                                         <state key="normal" title="Page 1 "/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="0xp-3E-8Kt"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" id="0xp-3E-8Kt"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIw-N4-JvI">
                                         <rect key="frame" x="50" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Page 2 "/>
                                         <connections>
-                                            <segue destination="Bnz-fK-xVu" kind="show" id="kF1-0w-pYB"/>
+                                            <segue destination="Bnz-fK-xVu" kind="presentation" id="kF1-0w-pYB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0r-aW-Iun">
                                         <rect key="frame" x="102" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Page 3 "/>
                                         <connections>
-                                            <segue destination="nM9-13-nJr" kind="show" id="Aut-GL-zZW"/>
+                                            <segue destination="nM9-13-nJr" kind="presentation" id="Aut-GL-zZW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZf-38-aGu">
                                         <rect key="frame" x="154" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Page 5 "/>
                                         <connections>
-                                            <segue destination="rlX-3A-xFb" kind="show" id="y5Y-5u-qZA"/>
+                                            <segue destination="rlX-3A-xFb" kind="presentation" id="y5Y-5u-qZA"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xcq-qw-I24">
-                                <rect key="frame" x="0.0" y="19" width="51" height="31"/>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="exitButton" destination="dfB-Bx-1KC" id="rdd-18-ZGF"/>
+                        <outlet property="menuSwitch" destination="Xcq-qw-I24" id="lWd-qO-TWA"/>
+                        <outlet property="page1Button" destination="L04-d7-2Bk" id="0aV-Je-NML"/>
+                        <outlet property="page2Button" destination="xIw-N4-JvI" id="18d-fl-AEY"/>
+                        <outlet property="page3Button" destination="U0r-aW-Iun" id="E9e-pA-Ha0"/>
+                        <outlet property="page5Button" destination="MZf-38-aGu" id="00W-Yp-sUK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AmL-Tx-I95" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,8 +165,8 @@
             <objects>
                 <viewController id="rlX-3A-xFb" customClass="Page5" customModule="AboutMeAppV2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="TXQ-YP-ucO"/>
-                        <viewControllerLayoutGuide type="bottom" id="TG6-Xt-4dO"/>
+                        <viewControllerLayoutGuide type="top" id="lIe-KZ-0CV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Apw-YV-1Ib"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tZU-gx-P2U">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -139,56 +176,74 @@
                                 <rect key="frame" x="281" y="563" width="39" height="37"/>
                             </pageControl>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3PY-og-xkq">
-                                <rect key="frame" x="197" y="28" width="206" height="30"/>
+                                <rect key="frame" x="114" y="21" width="206" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyz-Dt-Tgu">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
                                         <state key="normal" title="Page 1 "/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="6Sj-S1-y6v"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" id="6Sj-S1-y6v"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44X-sY-0al">
                                         <rect key="frame" x="50" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Page 2 "/>
                                         <connections>
-                                            <segue destination="Bnz-fK-xVu" kind="show" id="ECG-Ox-UOP"/>
+                                            <segue destination="Bnz-fK-xVu" kind="presentation" id="ECG-Ox-UOP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVa-sv-d0P">
                                         <rect key="frame" x="102" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Page 3 "/>
                                         <connections>
-                                            <segue destination="nM9-13-nJr" kind="show" id="6uj-Vg-TB0"/>
+                                            <segue destination="nM9-13-nJr" kind="presentation" id="6uj-Vg-TB0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41e-qd-xlk">
                                         <rect key="frame" x="154" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Page 4 "/>
                                         <connections>
-                                            <segue destination="IhX-Pz-RhX" kind="show" id="GrW-ST-TQT"/>
+                                            <segue destination="IhX-Pz-RhX" kind="presentation" id="GrW-ST-TQT"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zGO-84-yCc">
                                 <rect key="frame" x="0.0" y="20" width="51" height="31"/>
+                                <connections>
+                                    <action selector="menuSwitch:" destination="rlX-3A-xFb" eventType="valueChanged" id="NY8-nh-9to"/>
+                                </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itN-NQ-D7v">
+                                <rect key="frame" x="351" y="21" width="30" height="30"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="exitButton:" destination="rlX-3A-xFb" eventType="touchUpInside" id="aeO-tA-CLi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="exitButton" destination="itN-NQ-D7v" id="pVf-9W-AqH"/>
+                        <outlet property="menuSwitch" destination="zGO-84-yCc" id="nOP-5P-6sj"/>
+                        <outlet property="page1button" destination="Dyz-Dt-Tgu" id="dOY-Rt-CGe"/>
+                        <outlet property="page2button" destination="44X-sY-0al" id="NDl-es-6bI"/>
+                        <outlet property="page3button" destination="EVa-sv-d0P" id="9IB-wY-7ZU"/>
+                        <outlet property="page4button" destination="41e-qd-xlk" id="hDu-mT-0Qc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NoH-4r-sMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007" y="683"/>
+            <point key="canvasLocation" x="1006.9999999999999" y="683"/>
         </scene>
         <!--Page2-->
         <scene sceneID="rFY-Zt-Auh">
             <objects>
                 <viewController id="Bnz-fK-xVu" customClass="Page2" customModule="AboutMeAppV2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0DF-hm-ZME"/>
-                        <viewControllerLayoutGuide type="bottom" id="XoL-tt-Muo"/>
+                        <viewControllerLayoutGuide type="top" id="K2R-fw-AIV"/>
+                        <viewControllerLayoutGuide type="bottom" id="MHm-ar-m5m"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1oD-x0-V4Y">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -197,112 +252,152 @@
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="CuK-ea-cQi">
                                 <rect key="frame" x="281" y="563" width="39" height="37"/>
                             </pageControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="joc-qo-oog">
+                                <rect key="frame" x="0.0" y="20" width="51" height="31"/>
+                                <connections>
+                                    <action selector="menuSwitch:" destination="Bnz-fK-xVu" eventType="valueChanged" id="Gfg-26-nXZ"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDq-rd-H5j">
+                                <rect key="frame" x="355" y="20" width="30" height="30"/>
+                                <state key="normal" title="Exit"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8T-f2-9xN">
+                                <rect key="frame" x="355" y="20" width="30" height="30"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="exitButton:" destination="Bnz-fK-xVu" eventType="touchUpInside" id="Aa2-sd-cen"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aTP-gt-KNJ">
-                                <rect key="frame" x="196" y="28" width="206" height="30"/>
+                                <rect key="frame" x="96" y="20" width="206" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrt-pu-2dA">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrt-pu-2dA">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
                                         <state key="normal" title="Page 1 "/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="VWH-kL-H6T"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" id="VWH-kL-H6T"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSN-up-wJH">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSN-up-wJH">
                                         <rect key="frame" x="50" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Page 3 "/>
                                         <connections>
-                                            <segue destination="nM9-13-nJr" kind="show" id="zRw-vg-wsU"/>
+                                            <segue destination="nM9-13-nJr" kind="show" id="QO1-gg-F5s"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvm-K0-5p6">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvm-K0-5p6">
                                         <rect key="frame" x="102" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Page 4 "/>
                                         <connections>
-                                            <segue destination="IhX-Pz-RhX" kind="show" id="sVS-dI-8nG"/>
+                                            <segue destination="IhX-Pz-RhX" kind="presentation" id="sVS-dI-8nG"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tJ-Tn-Ezt">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tJ-Tn-Ezt">
                                         <rect key="frame" x="154" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Page 5 "/>
                                         <connections>
-                                            <segue destination="rlX-3A-xFb" kind="show" id="0rZ-od-rYv"/>
+                                            <segue destination="rlX-3A-xFb" kind="presentation" id="0rZ-od-rYv"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="joc-qo-oog">
-                                <rect key="frame" x="0.0" y="20" width="51" height="31"/>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="exitButton" destination="SDq-rd-H5j" id="EPZ-rM-oaE"/>
+                        <outlet property="menuSwitch" destination="joc-qo-oog" id="41K-q4-pfJ"/>
+                        <outlet property="page1Button" destination="mrt-pu-2dA" id="K4F-BY-HqX"/>
+                        <outlet property="page3Button" destination="gSN-up-wJH" id="f0q-IH-p6m"/>
+                        <outlet property="page4Button" destination="fvm-K0-5p6" id="7kC-2e-zcB"/>
+                        <outlet property="page5Button" destination="3tJ-Tn-Ezt" id="i0a-sr-Vgu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uC6-oJ-nwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="543" y="-283"/>
+            <point key="canvasLocation" x="543" y="-282.99999999999994"/>
         </scene>
         <!--Page3-->
         <scene sceneID="iCQ-wu-uHz">
             <objects>
                 <viewController id="nM9-13-nJr" customClass="Page3" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hr9-Ft-PmY"/>
-                        <viewControllerLayoutGuide type="bottom" id="RU4-xg-xQ2"/>
+                        <viewControllerLayoutGuide type="top" id="DJF-Pl-65R"/>
+                        <viewControllerLayoutGuide type="bottom" id="b8i-5c-Cen"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rh9-bp-sk2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="CY5-hB-QA2">
-                                <rect key="frame" x="281" y="563" width="39" height="37"/>
-                            </pageControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SmL-8N-aaw">
+                                <rect key="frame" x="0.0" y="19" width="51" height="31"/>
+                                <connections>
+                                    <action selector="menuSwitch:" destination="nM9-13-nJr" eventType="valueChanged" id="1HX-gx-sjK"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPA-cx-XPH">
+                                <rect key="frame" x="354" y="20" width="30" height="30"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="exitButton:" destination="nM9-13-nJr" eventType="touchUpInside" id="Qp2-Uo-sG8"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kCE-zn-uC3">
-                                <rect key="frame" x="197" y="20" width="206" height="30"/>
+                                <rect key="frame" x="114" y="20" width="206" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFu-Ju-oG3">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
                                         <state key="normal" title="Page 1 "/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="oh4-GK-dMN"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" id="oh4-GK-dMN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrG-T0-7jE">
                                         <rect key="frame" x="50" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Page 2 "/>
                                         <connections>
-                                            <segue destination="IhX-Pz-RhX" kind="show" id="CEf-ma-XJI"/>
+                                            <segue destination="Bnz-fK-xVu" kind="presentation" id="wVV-Fq-TU1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwA-ww-9m8">
                                         <rect key="frame" x="102" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Page 4 "/>
+                                        <connections>
+                                            <segue destination="IhX-Pz-RhX" kind="presentation" id="cWu-Gz-XsG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RG3-rK-XQ2">
                                         <rect key="frame" x="154" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Page 5 "/>
                                         <connections>
-                                            <segue destination="rlX-3A-xFb" kind="show" id="s4S-mH-yqT"/>
+                                            <segue destination="rlX-3A-xFb" kind="presentation" id="s4S-mH-yqT"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SmL-8N-aaw">
-                                <rect key="frame" x="0.0" y="19" width="51" height="31"/>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="exitButton" destination="fPA-cx-XPH" id="dO6-kK-gxp"/>
+                        <outlet property="menuSwitch" destination="SmL-8N-aaw" id="MxL-Ik-D7W"/>
+                        <outlet property="page1Button" destination="mFu-Ju-oG3" id="hho-ac-pRs"/>
+                        <outlet property="page2Button" destination="YrG-T0-7jE" id="qa4-3j-dk2"/>
+                        <outlet property="page4Button" destination="VwA-ww-9m8" id="kw2-KQ-E1y"/>
+                        <outlet property="page5Button" destination="RG3-rK-XQ2" id="ly2-Jm-3OB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RR7-vp-Gol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1273" y="-283"/>
+            <point key="canvasLocation" x="1273" y="-282.99999999999994"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="y5Y-5u-qZA"/>
-        <segue reference="GrW-ST-TQT"/>
-        <segue reference="kF1-0w-pYB"/>
-        <segue reference="0xp-3E-8Kt"/>
-        <segue reference="Aut-GL-zZW"/>
+        <segue reference="oh4-GK-dMN"/>
+        <segue reference="QO1-gg-F5s"/>
+        <segue reference="wVV-Fq-TU1"/>
+        <segue reference="cWu-Gz-XsG"/>
+        <segue reference="s4S-mH-yqT"/>
     </inferredMetricsTieBreakers>
 </document>
