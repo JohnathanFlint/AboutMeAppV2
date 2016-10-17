@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "49F107058B3D29211BDEB58546BD1C0487432B9C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8A684E981FC44126AEF3CEC6CD97D56F2833649A" : 0,
+    "49F107058B3D29211BDEB58546BD1C0487432B9C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2CB53A49-53B4-41FF-9B29-DB6AB0DF40A9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8A684E981FC44126AEF3CEC6CD97D56F2833649A" : "",
+    "49F107058B3D29211BDEB58546BD1C0487432B9C" : "AboutMeAppV2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AboutMeAppV2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AboutMeAppV2.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JohnathanFlint\/AboutMeAppV2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "49F107058B3D29211BDEB58546BD1C0487432B9C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JohnathanFlint\/String-Playgroung.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8A684E981FC44126AEF3CEC6CD97D56F2833649A"
+    }
+  ]
+}
