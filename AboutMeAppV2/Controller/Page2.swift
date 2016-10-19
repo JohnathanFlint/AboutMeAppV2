@@ -18,7 +18,6 @@ class Page2 : UIViewController
     @IBOutlet weak var menuSwitch: UISwitch!
     @IBOutlet weak var exitButton: UIButton!
     
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -27,8 +26,9 @@ class Page2 : UIViewController
         page3Button.hidden = true
         page4Button.hidden = true
         page5Button.hidden = true
-        menuSwitch.on = false
         exitButton.hidden = true
+        menuSwitch.on = false
+       
     }
     
     @IBAction func menuSwitch(sender: UISwitch)
