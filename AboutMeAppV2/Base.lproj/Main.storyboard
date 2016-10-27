@@ -88,6 +88,42 @@
                                     <action selector="exitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t11-gK-DIG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I am 17 years old." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5X-dG-cgC">
+                                <rect key="frame" x="234" y="103" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I love computers and most things associated with them." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84w-Ck-kH9">
+                                <rect key="frame" x="87" y="141" width="426" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I am terrible at math but good at english." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSF-Mj-GcU">
+                                <rect key="frame" x="145" y="183" width="310" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I can cook fairly Well" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isu-2X-i3W">
+                                <rect key="frame" x="222" y="221" width="157" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="and am an incurable geek that loves science fiction and fantasy." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8n-gG-cbK">
+                                <rect key="frame" x="54" y="261" width="487" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My name is Nicholas White." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49e-fa-b7K">
+                                <rect key="frame" x="195" y="69" width="211" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -100,6 +136,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ViewController" destination="8bC-Xf-vdC" id="NHU-ey-Lf8"/>
                         <outlet property="exitButton" destination="boy-pY-6Lr" id="WUe-yo-Uyw"/>
                         <outlet property="menuSwitch" destination="vYG-Vf-moL" id="HwE-dl-K0d"/>
                         <outlet property="page2Button" destination="7P8-65-NVI" id="fyZ-2O-p84"/>
@@ -328,6 +365,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="There are four boys and three girls in my immediate family. Click the stick figures to learn more." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs2-sg-5Gk">
+                                <rect key="frame" x="-62" y="64" width="725" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gun" translatesAutoresizingMaskIntoConstraints="NO" id="8kO-Me-bBU">
+                                <rect key="frame" x="85" y="140" width="431" height="319"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -342,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uC6-oJ-nwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="543" y="-282.99999999999994"/>
+            <point key="canvasLocation" x="543" y="-283"/>
         </scene>
         <!--Page3-->
         <scene sceneID="iCQ-wu-uHz">
@@ -419,11 +465,14 @@
             <point key="canvasLocation" x="1273" y="-282.99999999999994"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Gun" width="2448" height="3264"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="h5a-f2-cTV"/>
         <segue reference="VWH-kL-H6T"/>
-        <segue reference="0rZ-od-rYv"/>
-        <segue reference="sVS-dI-8nG"/>
         <segue reference="Ubd-Gx-hXZ"/>
+        <segue reference="sVS-dI-8nG"/>
+        <segue reference="0rZ-od-rYv"/>
     </inferredMetricsTieBreakers>
 </document>

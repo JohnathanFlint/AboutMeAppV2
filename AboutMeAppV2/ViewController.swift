@@ -17,6 +17,7 @@ class ViewController: UIViewController
     @IBOutlet weak var page5Button: UIButton!
     @IBOutlet weak var menuSwitch: UISwitch!
     @IBOutlet weak var exitButton: UIButton!
+    @IBOutlet var ViewController: UIView!
    
     override func viewDidLoad()
     {
@@ -28,6 +29,7 @@ class ViewController: UIViewController
         page4Button.hidden = true
         page5Button.hidden = true
         exitButton.hidden = true
+        //ViewController.background = UIImage  WizardandMountain
     }
     
     
